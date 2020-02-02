@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mongodb-service:
+    image: mongo
+    container_name: mongodb-container
+    ports:
+      - 27017:27017
+
+  mongo-populate-data:
+    build: ./mongo-populate-data
+    environment:
+      - JSON_FILE_NAME=${JSON_FILE_NAME}
+      - MONGO_DB_COLLECTION=${MONGO_DB_COLLECTION}
+      - MONGO_DB_HOST=${MONGO_DB_HOST}
+      - MONGO_DB_NAME=${MONGO_DB_NAME}
+    depends_on:
+      - mongodb-service
+
+  user-polls-service:
+    container_name: user-polls-app
+    build: ./user-polls
+    environment:
+      - APP_PORT=${APP_PORT}
+      - MONGO_DB_PORT=${MONGO_DB_PORT}
+      - MONGO_DB_HOST=${MONGO_DB_HOST}
+      - MONGO_DB_NAME=${MONGO_DB_NAME}
+    ports:
+      - 8082:8082
+    depends_on:
+      - mongodb-service
+    restart: on-failure
