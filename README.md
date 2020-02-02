@@ -29,7 +29,7 @@ During development process, I spent most of the time figuring out how MongoDB wo
 ```
  - Change directory
  ```
- cd user-polls
+ cd spring-mongo-docker/
 ```
  - Start containers with docker-compose
 ```
