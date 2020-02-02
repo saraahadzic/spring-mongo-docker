@@ -25,7 +25,7 @@ During development process, I spent most of the time figuring out how MongoDB wo
  ## How to start the project
  - Clone project from git using
  ```
- git clone https://github.com/saraahadzic/user-polls.git
+ git clone https://github.com/saraahadzic/spring-mongo-docker.git
 ```
  - Change directory
  ```
