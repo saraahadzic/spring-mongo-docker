@@ -50,7 +50,7 @@ GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
 
 | parameter |value format | properties accepted | example |
 |----|-----|---|----|   
-|  **criteria**  | *property:value*|id|*criteria=locale:fr_CH*|
+|  **criteria**  | *property:value*|id|*criteria=locale:"fr_CH"*|
 |    |  |adminKey||
 |    |  |type||
 |    |  |preferencesType||
