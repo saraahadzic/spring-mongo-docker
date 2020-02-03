@@ -8,7 +8,7 @@
 GET ${HOSTNAME}:${PORT}/userpolls/all
 ```
 ## 2. Get user polls filtered by *initiated* field in **datetime** format
-**Explanation:** API returns user polls from database that match passed datetime format 
+**Explanation:** API returns user polls from database that match passed datetime format and operator
 
 |parameter | value / value format | meaning |
 |----|-----|---|    
@@ -29,7 +29,7 @@ GET ${HOSTNAME}:${PORT}/userpolls/datetimesearch?operator=eq&initiated=24-01-201
 *if wrong value is sent for operator or datetime cannot be parsed, API returns all data from db*
 
 ## 3. Get user polls filtered by *initiated* field in **date** format
-**Explanation:** API returns user polls from database that match passed date format 
+**Explanation:** API returns user polls from database that match passed date format and operator
 
 | parameter | value / value format | meaning |
 |----|-----|---|    
