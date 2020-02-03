@@ -70,9 +70,13 @@ GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
 **Example:**
 
 ```
-GET ${HOSTNAME}:${PORT}/userpolls/textsearch?criteria=locale:fr_CH   
+GET ${HOSTNAME}:${PORT}/userpolls/textsearch?criteria=locale:"fr_CH"   
 ```   
 or
 ```
 GET ${HOSTNAME}:${PORT}/userpolls/textsearch?criteria=options.text:"Hulk"   
 ```
+or
+```
+${HOSTNAME}:${PORT}/userpolls/textsearch?criteria=title:"trip",initiator.name:"John Doe"
+``` 
