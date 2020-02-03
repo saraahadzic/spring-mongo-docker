@@ -77,7 +77,7 @@ public class UserPollsServiceImpl implements UserPollsService {
                     break;
                 }
                 default: {
-                    return userPollsRepo.findAll();
+
 
                 }
 
@@ -87,7 +87,7 @@ public class UserPollsServiceImpl implements UserPollsService {
 
 
         } catch (ParseException e) {
-            return mongoTemplate.find(new Query(), UserPolls.class);
+            return userPollsRepo.findAll();
         }
     }
 

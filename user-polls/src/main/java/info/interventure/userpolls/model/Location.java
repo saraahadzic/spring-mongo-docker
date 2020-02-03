@@ -101,4 +101,15 @@ public class Location {
     public int hashCode() {
         return Objects.hash(name, address, countryCode, locationId, additionalProperties);
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", locationId='" + locationId + '\'' +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

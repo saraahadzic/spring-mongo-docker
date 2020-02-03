@@ -87,4 +87,14 @@ public class Participant {
     public int hashCode() {
         return Objects.hash(id, name, preferences, additionalProperties);
     }
+
+    @Override
+    public String toString() {
+        return "Participant{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", preferences=" + preferences +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

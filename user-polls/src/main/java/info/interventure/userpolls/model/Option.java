@@ -205,4 +205,22 @@ public class Option {
     public int hashCode() {
         return Objects.hash(text, available, start, allday, date, end, startDate, endDate, startDateTime, endDateTime, dateTime, additionalProperties);
     }
+
+    @Override
+    public String toString() {
+        return "Option{" +
+                "text='" + text + '\'' +
+                ", available=" + available +
+                ", start=" + start +
+                ", allday=" + allday +
+                ", date=" + date +
+                ", end=" + end +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", startDateTime=" + startDateTime +
+                ", endDateTime=" + endDateTime +
+                ", dateTime=" + dateTime +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

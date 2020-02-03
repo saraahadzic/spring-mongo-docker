@@ -374,9 +374,34 @@ public class UserPolls {
 
     @Override
     public String toString() {
-        return
+        return "UserPolls{" +
+                "id='" + id + '\'' +
+                ", adminKey='" + adminKey + '\'' +
+                ", latestChange=" + latestChange +
+                ", initiated=" + initiated +
+                ", participantsCount=" + participantsCount +
+                ", inviteesCount=" + inviteesCount +
+                ", type='" + type + '\'' +
+                ", hidden=" + hidden +
+                ", preferencesType='" + preferencesType + '\'' +
+                ", state='" + state + '\'' +
+                ", locale='" + locale + '\'' +
+                ", title='" + title + '\'' +
                 ", initiator=" + initiator +
-
+                ", options=" + options +
+                ", optionsHash='" + optionsHash + '\'' +
+                ", participants=" + participants +
+                ", invitees=" + invitees +
+                ", device='" + device + '\'' +
+                ", levels='" + levels + '\'' +
+                ", description='" + description + '\'' +
+                ", location=" + location +
+                ", multiDay=" + multiDay +
+                ", columnConstraint=" + columnConstraint +
+                ", dateText=" + dateText +
+                ", timeZone=" + timeZone +
+                ", rowConstraint=" + rowConstraint +
+                ", additionalProperties=" + additionalProperties +
                 '}';
     }
 
