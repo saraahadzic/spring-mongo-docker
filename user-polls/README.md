@@ -1,4 +1,4 @@
-# User polls API 
+# User polls APIs 
 
 ## 1. Get all user polls 
 **Explanation:** API returns all user polls from database
