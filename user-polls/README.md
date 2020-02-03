@@ -26,6 +26,8 @@ GET ${HOSTNAME}:${PORT}/userpolls/all
 ```
 GET ${HOSTNAME}:${PORT}/userpolls/datetimesearch?operator=eq&initiated=24-01-2017-23:09:19.061-UTC
 ```
+This call will return all documents that have initiated datetime set to 24-01-2017-23:09:19.061-UTC
+
 *if wrong value is sent for operator or datetime cannot be parsed, API returns all data from db*
 
 ## 3. Get user polls filtered by *initiated* field in **date** format
@@ -45,8 +47,10 @@ GET ${HOSTNAME}:${PORT}/userpolls/datetimesearch?operator=eq&initiated=24-01-201
 
 **Example:**
 ```
-GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
+GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=gt&initiated=24-01-2017
 ```
+This call will return all documents that have initiated date grater than 24-01-2017 CET time (regardless of timestamp)
+
 *if wrong value is sent for operator or date cannot be parsed, API returns all data from db*
 
 ## 4. Get user polls filtered by criteria (text fields search)
