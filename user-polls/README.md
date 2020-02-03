@@ -20,7 +20,9 @@ GET ${HOSTNAME}:${PORT}/userpolls/all
 |    | lte |less than equal |
 |  **initiated**  | *dd-MM-yyyy-HH:mm:ss.SSS-z* ||
 
-Example:
+**ENDPOINT URL: ${HOSTNAME}:${PORT}/userpolls/datetimesearch**
+
+**Example:**
 ```
 GET ${HOSTNAME}:${PORT}/userpolls/datetimesearch?operator=eq&initiated=24-01-2017-23:09:19.061-UTC
 ```
@@ -39,6 +41,8 @@ GET ${HOSTNAME}:${PORT}/userpolls/datetimesearch?operator=eq&initiated=24-01-201
 |    | lte |less than equal |
 |  **initiated**  | *dd-MM-yyyy* |*value in CET*|
 
+**ENDPOINT URL: ${HOSTNAME}:${PORT}/userpolls/datesearch**
+
 **Example:**
 ```
 GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
@@ -46,7 +50,7 @@ GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
 *if wrong value is sent for operator or date cannot be parsed, API returns all data from db*
 
 ## 4. Get user polls filtered by criteria (text fields search)
-**Explanation:** API returns user polls from database that match passed criteria. Criteria can be any indexed text property from document or nested documents. Search is in english language.
+**Explanation:** API returns user polls from database that match passed criteria. Criteria can be any indexed text property from document or nested documents. Search is in *english* language.
 
 | parameter |value format | properties accepted | example |
 |----|-----|---|----|   
@@ -65,7 +69,7 @@ GET ${HOSTNAME}:${PORT}/userpolls/datesearch?operator=eq&initiated=24-01-2017
 |    |  |initiator.name||
 |    |  |...||
   
-Index created: 
+Index for search: 
 ```
 [
         {
