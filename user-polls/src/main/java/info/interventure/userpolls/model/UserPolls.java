@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 
-@Document(collection = "polls", language = "none")
+@Document(collection = "polls", language = "english")
 
 public class UserPolls {
 
