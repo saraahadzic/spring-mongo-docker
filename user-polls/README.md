@@ -54,7 +54,7 @@ This call will return all documents that have initiated date grater than 24-01-2
 *if wrong value is sent for operator or date cannot be parsed, API returns all data from db*
 
 ## 4. Get user polls filtered by criteria (text fields search)
-**Explanation:** API returns user polls from database that match passed criteria. Criteria can be any indexed text property from document or nested documents. Search is in *english* language.
+**Explanation:** API returns user polls from database that match passed criteria. *Criteria* can be any indexed text property from document or nested documents (all fields that are mentioned in collection index (here UserPolls_TextIndex) can be included in *criteria*). Search is in *english* language.
 
 | parameter |value format | properties accepted | example |
 |----|-----|---|----|   
@@ -133,7 +133,7 @@ Index for search:
 ]
 ```
 
-**Example:**
+**Examples:**
 
 ```
 GET ${HOSTNAME}:${PORT}/userpolls/textsearch?criteria=locale:"fr_CH"   
